@@ -5,11 +5,11 @@ This class provides an introduction to the Python programming language and the i
 This week we will have an overview of Python and take the first steps towards programming.
 
 ### Resources
-www.python.org 
-www.pasteur.fr/formation/infobio/python/ 
-www.onlamp.com/pub/a/python/2002/10/17/biopython.html 
-www.learnpython.org 
-www.greenteapress.com/thinkpython/ 
+- www.python.org 
+- www.pasteur.fr/formation/infobio/python/ 
+- www.onlamp.com/pub/a/python/2002/10/17/biopython.html 
+- www.learnpython.org 
+- www.greenteapress.com/thinkpython/ 
 
 ## 3.2: Data structures, loops
 In this module, we'll be taking a look at Data Structures and Ifs and Loops.
@@ -40,21 +40,25 @@ Here are the questions your program needs to answer. The quiz itself contains th
 3. In molecular biology, a reading frame is a way of dividing the DNA sequence of nucleotides into a set of consecutive, non-overlapping triplets (or codons). Depending on where we start, there are six possible reading frames: three in the forward (5' to 3') direction and three in the reverse (3' to 5'). For instance, the three possible forward reading frames for the sequence AGGTGACACCGCAAGCCTTATATTAGC are: 
 
 > AGG TGA CAC CGC AAG CCT TAT ATT AGC
+
 > A GGT GAC ACC GCA AGC CTT ATA TTA GC
+
 > AG GTG ACA CCG CAA GCC TTA TAT TAG C 
 
-These are called reading frames 1, 2, and 3 respectively. An open reading frame (ORF) is the part of a reading frame that has the potential to encode a protein. It starts with a start codon (ATG), and ends with a stop codon (TAA, TAG or TGA). For instance, ATGAAATAG is an ORF of length 9.
+...These are called reading frames 1, 2, and 3 respectively. An open reading frame (ORF) is the part of a reading frame that has the potential to encode a protein. It starts with a start codon (ATG), and ends with a stop codon (TAA, TAG or TGA). For instance, ATGAAATAG is an ORF of length 9.
 
-Given an input reading frame on the forward strand (1, 2, or 3) your program should be able to identify all ORFs present in each sequence of the FASTA file, and answer the following questions: what is the length of the longest ORF in the file? What is the identifier of the sequence containing the longest ORF? For a given sequence identifier, what is the longest ORF contained in the sequence represented by that identifier? What is the starting position of the longest ORF in the sequence that contains it? The position should indicate the character number in the sequence. For instance, the following ORF in reading frame 1:
+...Given an input reading frame on the forward strand (1, 2, or 3) your program should be able to identify all ORFs present in each sequence of the FASTA file, and answer the following questions: what is the length of the longest ORF in the file? What is the identifier of the sequence containing the longest ORF? For a given sequence identifier, what is the longest ORF contained in the sequence represented by that identifier? What is the starting position of the longest ORF in the sequence that contains it? The position should indicate the character number in the sequence. For instance, the following ORF in reading frame 1:
 
-> >sequence1
+> \>sequence1
+
 > ATGCCCTAG
 
 starts at position 1.
 
 Note that because the following sequence:
 
-> >sequence2
+> \>sequence2
+
 > ATGAAAAAA
 
 does not have any stop codon in reading frame 1, we do not consider it to be an ORF in reading frame 1. 
