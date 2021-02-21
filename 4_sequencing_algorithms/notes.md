@@ -34,7 +34,7 @@ The Jupyter notebooks used in the practical sessions are available in ipynb form
 
 ### Massively parallel sequencing
 
-####In vitro: 
+#### In vitro: 
 - Extract DNA
 - Chop into 100-200 nt single-stranded snippets
 - Deposit on slide
@@ -46,7 +46,7 @@ The Jupyter notebooks used in the practical sessions are available in ipynb form
 - Terminators removed
 - Repeat 
 
-####In silico: 
+#### In silico: 
 - Snapshots collected in order
 - Snapshots compared for each template strand
 - Reverse complemented for the original sequence
@@ -59,7 +59,7 @@ The Jupyter notebooks used in the practical sessions are available in ipynb form
 - Q = -10 log(p)
 - Probability, p, is calculated as the proportion of measurements that agree
 
-###FASTQ format
+### FASTQ format
 - Name
 - Sequence
 - ?
