@@ -1,0 +1,2 @@
+language = "python3"
+run = "python3 4_sequencing_algorithms/boyer_moore_preprosessing.py"
